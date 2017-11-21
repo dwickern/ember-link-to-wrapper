@@ -1,5 +1,8 @@
 # ember-link-to-wrapper
 
+[![npm version](https://badge.fury.io/js/ember-link-to-wrapper.svg)](https://www.npmjs.com/package/ember-link-to-wrapper)
+[![build status](https://travis-ci.org/dwickern/ember-link-to-wrapper.svg?branch=master)](https://travis-ci.org/dwickern/ember-link-to-wrapper)
+
 An anchor wrapped in a list item. That's all. Useful for working with bootstrap which wants the `active` class on the `<li>`.
 
 Because [ember-cli-active-link-wrapper](https://github.com/alexspeller/ember-cli-active-link-wrapper) has some issues on ember 2.10+.
