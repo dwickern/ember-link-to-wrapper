@@ -1,17 +1,17 @@
 {
   "name": "ember-link-to-wrapper",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "An anchor wrapped in a list item",
   "keywords": [
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Derek Wickern",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/dwickern/ember-link-to-wrapper",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
