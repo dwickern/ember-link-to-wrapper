@@ -1,0 +1,9 @@
+{{#if hasBlock}}
+  {{#link-to params=params}}
+    {{yield}}
+  {{/link-to}}
+{{else}}
+  {{#link-to params=_inlineFormParams}}
+    {{_inlineFormBody}}
+  {{/link-to}}
+{{/if}}

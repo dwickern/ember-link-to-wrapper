@@ -1,3 +1,7 @@
 <h2 id="title">Welcome to Ember</h2>
 
-{{outlet}}
+{{! inline form }}
+{{link-to-wrapper "First" "first" id="first"}}
+
+{{! block form }}
+{{#link-to-wrapper "second" id="second"}}Second{{/link-to-wrapper}}
