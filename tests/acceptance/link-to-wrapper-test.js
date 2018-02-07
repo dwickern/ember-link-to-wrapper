@@ -33,3 +33,16 @@ test('active state', async function(assert) {
   assert.notOk(find('#first').is('.active'));
   assert.notOk(find('#second').is('.active'));
 });
+
+test('customize tag name', async function(assert) {
+  await visit('/');
+
+  assert.ok(find('#custom-tag').is('div'));
+});
+
+test('customize class names', async function(assert) {
+  await visit('/');
+
+  assert.ok(find('li#custom-class').hasClass('li-class'));
+  assert.ok(find('li#custom-class > a').hasClass('a-class'));
+});

@@ -1,9 +1,9 @@
 {{#if hasBlock}}
-  {{#link-to params=params}}
+  {{#component linkComponent params=params}}
     {{yield}}
-  {{/link-to}}
+  {{/component}}
 {{else}}
-  {{#link-to params=_inlineFormParams}}
+  {{#component linkComponent params=_inlineFormParams}}
     {{_inlineFormBody}}
-  {{/link-to}}
+  {{/component}}
 {{/if}}

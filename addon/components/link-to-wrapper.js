@@ -5,6 +5,7 @@ import { computed } from "@ember/object";
 export default LinkComponent.extend({
   layout,
   tagName: 'li',
+  linkComponent: 'link-to',
 
   _inlineFormBody: computed('params.[]', function() {
     return this.get('params')[0];

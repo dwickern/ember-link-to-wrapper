@@ -5,3 +5,17 @@
 
 {{! block form }}
 {{#link-to-wrapper "second" id="second"}}Second{{/link-to-wrapper}}
+
+{{! customized tag }}
+{{#link-to-wrapper "first" id="custom-tag" tagName="div"}}
+  Customized tag name
+{{/link-to-wrapper}}
+
+{{! customized class names }}
+{{#link-to-wrapper "first" id="custom-class" class="li-class" linkComponent=(component "link-to" class="a-class")}}
+  Customized class names
+{{/link-to-wrapper}}
+
+{{#link-to-wrapper "first" class="outer" linkComponent=(component 'link-to' class="inner")}}
+  View post {{postId}}
+{{/link-to-wrapper}}

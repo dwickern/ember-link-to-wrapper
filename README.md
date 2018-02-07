@@ -23,25 +23,62 @@ Use `{{link-to-wrapper}}` as a drop-in replacement for `{{link-to}}`:
 {{/link-to-wrapper}}
 ```
 
-The template will produce this html:
+The template will produce roughly this html:
+
 ```html
-<li class="active ember-view">
-  <a href="/my-route" class="active ember-view">
+<li>
+  <a href="/my-route">
     Visit my route!
   </a>
 </li>
 ```
 
+When the route is active, an `active` class is applied to _both_ elements:
+
+```html
+<li class="active">
+  <a href="/my-route" class="active">
+    Visit my route!
+  </a>
+</li>
+```
+
+### Query parameters
+
 Pass model arguments and query params as usual:
+
 ```hbs
 {{#link-to-wrapper "posts" postId (query-params expanded=true)}}
   View post {{postId}}
 {{/link-to-wrapper}}
 ```
 
-The inline form is also supported:
+### Inline form
+
+The [inline form](https://guides.emberjs.com/v2.15.0/templates/links/#toc_using-link-to-as-an-inline-component) is also supported:
+
 ```hbs
 {{link-to-wrapper "My Route" "my-route"}}
+```
+
+### Custom attributes
+
+Use `linkComponent` to customize the inner anchor element:
+
+```hbs
+{{#link-to-wrapper "my-route" class="outer" linkComponent=(component 'link-to' class="inner")}}
+  Visit my route!
+{{/link-to-wrapper}}
+```
+
+Produces roughly this html:
+
+```html
+<li class="outer">
+  <a href="/my-route" class="inner">
+    Visit my route!
+  </a>
+</li>
 ```
 
 ## Development
