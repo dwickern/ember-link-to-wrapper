@@ -85,7 +85,7 @@ Produces roughly this html:
 
 * `git clone <repository-url>` this repository
 * `cd ember-link-to-wrapper`
-* `npm install`
+* `yarn install`
 
 ## Running
 
@@ -94,7 +94,7 @@ Produces roughly this html:
 
 ## Running Tests
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
+* `yarn test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
