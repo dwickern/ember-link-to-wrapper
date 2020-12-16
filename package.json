@@ -1,6 +1,6 @@
 {
   "name": "ember-link-to-wrapper",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "An anchor wrapped in a list item",
   "keywords": [
     "ember-addon"
