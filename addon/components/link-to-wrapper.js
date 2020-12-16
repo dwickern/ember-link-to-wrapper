@@ -20,6 +20,6 @@ export default LinkComponent.extend({
 
     // the click event is handled by the inner link-to,
     // otherwise we would transition twice
-    this.off(this.get('eventName'));
+    this.off(this.get('eventName'), this, this._invoke);
   }
 });
